@@ -1,0 +1,34 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyd
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# VS Code
+.vscode/
+
+# AWS SAM / CDK / Build artifacts
+.aws-sam/
+cdk.out/
+*.zip
+
+# Logs
+*.log
+
+# macOS trash
+.DS_Store
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# IDE files
+.idea/
