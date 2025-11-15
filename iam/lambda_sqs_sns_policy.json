@@ -1,0 +1,33 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SQSSendMessage",
+      "Effect": "Allow",
+      "Action": [
+        "sqs:SendMessage",
+        "sqs:GetQueueAttributes",
+        "sqs:GetQueueUrl"
+      ],
+      "Resource": "arn:aws:sqs:<region>:<account-id>:UserSignupQueue"
+    },
+    {
+      "Sid": "SNSPublish",
+      "Effect": "Allow",
+      "Action": [
+        "sns:Publish"
+      ],
+      "Resource": "arn:aws:sns:<region>:<account-id>:WelcomeEmailTopic"
+    },
+    {
+      "Sid": "CloudWatchLogs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
